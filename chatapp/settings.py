@@ -190,7 +190,7 @@ GRAPHQL_AUTH = {
     'REGISTER_MUTATION_FIELDS_OPTIONAL':['first_name','last_name',],
     'LOGIN_ALLOWED_FIELDS': ['email'],
     'ALLOW_LOGIN_NOT_VERIFIED': False,
-    'EMAIL_FROM': 'dev.metatest@gmail.com',
+    'EMAIL_FROM': '',
     # ...
 }
 
@@ -198,8 +198,8 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # EMAIL_HOST = 'smtp.gmail.com'
 # EMAIL_PORT = 587
-# EMAIL_HOST_USER='dev.metatest@gmail.com'
-# EMAIL_HOST_PASSWORD='Village@102'
+# EMAIL_HOST_USER=''
+# EMAIL_HOST_PASSWORD=''
 # EMAIL_USE_TLS=True
 
 BROKER_URL = 'redis://localhost:6379'
