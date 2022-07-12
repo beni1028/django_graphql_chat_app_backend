@@ -1,0 +1,28 @@
+<div
+  aria-live="polite"
+  aria-atomic="true"
+  style="position: relative; margin-bottom: 14px"
+>
+  <!-- Position it -->
+  <div style="position: absolute; bottom: 5%; right: 1%">
+    {% if messages%} {%for message in messages%}
+    <!-- <div class="container">
+            <div class="alert alert-{{message.tags}} alert-dismissible fade show" id="message" role="alert">
+            </div>
+            </div> -->
+
+    <div
+      class="toast bg-{{message.tags}} text-white"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+      data-delay="5000"
+    >
+      <div class="toast-body">
+        <h3 class="m-0 px-2">{{message}}</h3>
+      </div>
+    </div>
+
+    {%endfor%} {%endif%}
+  </div>
+</div>

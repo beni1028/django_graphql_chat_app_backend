@@ -1,0 +1,6 @@
+from account.models import User
+a = User.objects.get(id=3)
+a = User.objects.all()
+a.email
+
+sudo kill -9 `sudo lsof -t -i:1234`
